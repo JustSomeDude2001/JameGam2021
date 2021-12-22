@@ -12,7 +12,7 @@ public class ResourceCount {
     }
 
     public ResourceCount() {
-        
+
     }
 }
 
@@ -20,8 +20,6 @@ public class Resource
 {
     public string name;
     public string description;
-
-    public bool isStat;
     public float baseValue;
 
     public ResourceCount getBase() {
@@ -30,5 +28,9 @@ public class Resource
 
     public ResourceCount getZero() {
         return new ResourceCount(name, 0);
+    }
+
+    public Resource() {
+        
     }
 }

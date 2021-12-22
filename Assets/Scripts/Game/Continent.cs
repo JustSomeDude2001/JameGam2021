@@ -5,17 +5,32 @@ using UnityEngine;
 public class Continent
 {
     public string name;
-    public float security;
-    public float logistics;
-    
-    public List <Building> buildings;
+    public List <int> buildings;
+
+    public float unrest = 0;
+
+    public float getIncome(string resource) {
+        float result = 0;
+        for (int i = 0; i < buildings.Count; i++) {
+            result += GameState.buildings[i].getResource(resource, GameState.buildings[i].income);
+        }
+        return result * (1f - unrest);
+    }
+
+    public float getMaint(string resource) {
+        float result = 0;
+        for (int i = 0; i < buildings.Count; i++) {
+            result += GameState.buildings[i].getResource(resource, GameState.buildings[i].maint);
+        }
+        return result * (1f + unrest);
+    }
 
     public Continent(string newName) {
         name = newName;
-        buildings = new List<Building>();
+        buildings = new List<int>();
     }
 
     public Continent() {
-        buildings = new List<Building>();
+        buildings = new List<int>();
     }
 }

@@ -1,4 +1,5 @@
 <Building>
+    <name>House</name>
     <income>
         <ResourceCount>
             <name>Elves</name>
