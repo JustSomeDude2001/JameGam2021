@@ -22,4 +22,12 @@ public static class XMLOp
         reader.Close();
         return item;
     }
+
+    public static Resource DeserializeResource(string path) {
+        XmlSerializer serializer = new XmlSerializer(typeof(Resource));
+        StreamReader reader = new StreamReader(path);
+        Resource item = serializer.Deserialize(reader.BaseStream) as Resource;
+        reader.Close();
+        return item;
+    }
 }

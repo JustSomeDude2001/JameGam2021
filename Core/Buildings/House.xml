@@ -1,4 +1,9 @@
 <Building>
-    <income_elves>10</income_elves>
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>10</value>
+        </ResourceCount>
+    </income>
 
 </Building>

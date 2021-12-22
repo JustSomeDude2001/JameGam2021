@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BuildsBuilding : MonoBehaviour
-{
+{ 
     public string buildingType;
+    public string location;
+    public List<string> techs;
     private void Start() {
+        GameState.NewGame();
     }
 
     private void OnMouseDown() {
-        GameState.GetContinent("Africa").buildings.Add(XMLOp.DeserializeBuilding("Data/Building_" + buildingType + ".xml"));
-        Debug.Log(GameState.GetContinent("Africa").buildings[0].income_elves);
+        //GameState.GetContinent(location).buildings.Add(XMLOp.DeserializeBuilding("Core/Building/" + buildingType + ".xml"));
     }
 }
