@@ -1,3 +1,5 @@
 <Resource>
     <name>Elves</name>
+    <baseValue>100</baseValue>
+    <skin>Elves</skin>
 </Resource>

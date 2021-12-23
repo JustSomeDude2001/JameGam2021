@@ -22,6 +22,8 @@ public class Resource
     public string description;
     public float baseValue;
 
+    public string skin;
+
     public ResourceCount getBase() {
         return new ResourceCount(name, baseValue);
     }

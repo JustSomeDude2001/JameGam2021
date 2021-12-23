@@ -1,3 +1,5 @@
 <Resource>
     <name>Humans</name>
+    <baseValue>50</baseValue>
+    <skin>Humans</skin>
 </Resource>

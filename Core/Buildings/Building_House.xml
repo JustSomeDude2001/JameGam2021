@@ -1,10 +1,60 @@
 <Building>
     <name>House</name>
+
+    <score>0</score>
+
     <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>1</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
         <ResourceCount>
             <name>Elves</name>
             <value>10</value>
         </ResourceCount>
-    </income>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </costs>
 
 </Building>

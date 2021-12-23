@@ -5,19 +5,22 @@ using UnityEngine;
 public class BuildsBuilding : MonoBehaviour
 { 
     public string buildingType;
-    public string location;
+    public bool locked = false;
 
     void notifyFail() {
 
     }
     void notifySuccess() {
-
+        Debug.Log("Built building");
     }
 
     private void OnMouseDown() {
-        if (GameState.canBuild(buildingType, location)) {
-            GameState.build(buildingType, location);
+        if (GameState.canBuild(buildingType) && !locked) {
+            GameState.build(buildingType);
             notifySuccess();
+            locked = true;
+
+            Destroy(gameObject);
         } else {
             notifyFail();
         }
