@@ -1,0 +1,65 @@
+<Building>
+    <name>Elf Farm</name>
+
+    <description>An elf mass-production facility. Using the same techniques that are used in industrial cattle farming.</description>
+
+    <score>0</score>
+    <picture>ElfFarm</picture>
+
+    <prerequisiteDecision>Living Toys</prerequisiteDecision>
+
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>25</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>500</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>20</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>1000</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>1000</value>
+        </ResourceCount>
+    </costs>
+
+</Building>

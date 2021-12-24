@@ -1,0 +1,63 @@
+<Decision>
+    <name>Abolish Elf Freedom</name>
+
+    <description>Elves need to serve the goals of the Christmas council. Freedoms are suspended until further notice. They shall work to the bone.</description>
+    <picture>AbolishElfFreedom</picture>
+
+    <prerequisiteDecision>Extend Working Hours</prerequisiteDecision>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0.1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0.25</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0.25</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>10</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>10</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>10</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>10</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>10</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

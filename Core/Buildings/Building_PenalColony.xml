@@ -1,0 +1,64 @@
+<Building>
+    <name>Penal Colony</name>
+
+    <description>Disobedient elves and traitor human operatives are worked here until they are dead of malnutrition. A small price to pay for the security of Christmas.</description>
+
+    <score>0</score>
+    <picture>PenalColony</picture>
+    <prerequisiteDecision>Abolish Elf Freedom</prerequisiteDecision>
+
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>3</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>5</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>10</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>12</value>
+        </ResourceCount>
+    </costs>
+
+</Building>

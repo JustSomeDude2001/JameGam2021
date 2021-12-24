@@ -1,0 +1,65 @@
+<Building>
+    <name>Raiding Base</name>
+
+    <description>Dictators, pirates, cannibals and other bad kids do not deserve the resources they hold.</description>
+
+    <score>0</score>
+    <picture>RaidingBase</picture>
+
+    <prerequisiteDecision>Nihilistic Acquisition</prerequisiteDecision>
+
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>5</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>5</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>20</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>5</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>5</value>
+        </ResourceCount>
+    </costs>
+
+</Building>

@@ -1,0 +1,65 @@
+<Decision>
+    <name>Acquire Hat Of Santa</name>
+
+    <description>The legendary Santa's hat will finally be ours. All we need to do is invade North Korea and take it by force.</description>
+    <picture>AcquireHatOfSanta</picture>
+
+    <prerequisiteDecision>Cult Of Santa</prerequisiteDecision>
+
+    <score>20000</score>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>1</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>1</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>1750</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>1000</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>1000</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>2500</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>2500</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

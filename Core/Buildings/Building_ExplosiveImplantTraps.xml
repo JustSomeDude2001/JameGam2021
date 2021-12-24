@@ -1,0 +1,65 @@
+<Building>
+    <name>Explosive Implant Traps</name>
+
+    <description>These operatives implant bad humans with remotely controlled explosive implants to effectively make them do whatever we need.</description>
+
+    <score>0</score>
+    <picture>ExplosiveImplantTraps</picture>
+
+    <prerequisiteDecision>Nihilistic Acquisition</prerequisiteDecision>
+
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>7</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>5</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>10</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>100</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>50</value>
+        </ResourceCount>
+    </costs>
+
+</Building>

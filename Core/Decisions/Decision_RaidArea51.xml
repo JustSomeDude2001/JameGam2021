@@ -1,0 +1,63 @@
+<Decision>
+    <name>Raid Area 51</name>
+
+    <description>Technology from Area 51 can be used to solve our issues with resources. A lot of equipment will be required for this operation.</description>
+    <picture>RaidArea51</picture>
+
+    <prerequisiteDecision>Nihilistic Acquisition</prerequisiteDecision>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0.25</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0.25</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0.25</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0.25</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0.25</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>100</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>200</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>50</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>200</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>300</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

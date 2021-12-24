@@ -1,0 +1,63 @@
+<Decision>
+    <name>Living Toys</name>
+
+    <description>We can breed elves as gifts for the children of influential figures. Better than puppies and allows us to get rid of undesirables.</description>
+    <picture>LivingToys</picture>
+
+    <prerequisiteDecision>Abolish Elf Freedom</prerequisiteDecision>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0.1</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0.1</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>250</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

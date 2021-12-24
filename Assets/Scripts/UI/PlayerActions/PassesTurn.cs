@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PassesTurn : MonoBehaviour
 {
     private void Start() {
         GameState.NewGame();
+        NextTurn();
     }
 
     public void NextTurn() {
@@ -24,6 +26,10 @@ public class PassesTurn : MonoBehaviour
         for (int i = 0; i < spawners.Count; i++) {
             Spawner spawner = spawners[i].GetComponent<Spawner>();
             spawner.SpawnObject();
+        }
+
+        if (GameState.weeks == 0) {
+            SceneManager.LoadScene("End", LoadSceneMode.Single);
         }
     }
 }

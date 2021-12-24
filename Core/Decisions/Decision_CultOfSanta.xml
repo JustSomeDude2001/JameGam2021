@@ -1,0 +1,63 @@
+<Decision>
+    <name>Cult Of Santa</name>
+
+    <description>Santa never left us. His soul resides in his legendary hat. Thou who finds the hat shall become the savior of Christmas.</description>
+    <picture>CultOfSanta</picture>
+
+    <prerequisiteDecision>Subliminal Messaging</prerequisiteDecision>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0.75</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0.25</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>200</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>500</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>100</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

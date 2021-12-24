@@ -5,8 +5,8 @@ using System.IO;
 
 public static class GameState
 {
-    public static float unrest = 0f;
-    public static int weeks = 52;
+    public static int score = 0;
+    public static int weeks = 91;
 
     public static List <Resource> resourcesDescs;
     public static List <ResourceCount> resources;
@@ -86,10 +86,10 @@ public static class GameState
         return -1;
     }
     static Decision getCandidateDecision(string name) {
-        return decisions[getCandidateDecisionIndex(name)];
+        return decisions[getDecisionIndex(name)];
     }
 
-    static int getCandidateDecisionIndex(string name) {
+    public static int getDecisionIndex(string name) {
         for (int i = 0; i < decisions.Count; i++) {
             if(decisions[i].name == name) {
                 return i;
@@ -116,6 +116,7 @@ public static class GameState
             curval.value -= target.getResource(curval.name, target.costs);
         }
         buildingCounts[index]++;
+        score += target.score;
         RecalculateDeltas();
     }
 
@@ -131,11 +132,12 @@ public static class GameState
 
     public static void enactDecision(string decision) {
         Decision target = getCandidateDecision(decision);
-        int index = getCandidateDecisionIndex(decision);
+        int index = getDecisionIndex(decision);
         foreach (ResourceCount curval in resources) {
             curval.value -= target.getResource(curval.name, target.costs);
         }
         enacted[index] = true;
+        score += target.score;
         Debug.Log("Decision " + index.ToString() + " enacted");
         RecalculateDeltas();
     }
@@ -148,7 +150,7 @@ public static class GameState
 
         for (int i = 0; i < decisions.Count; i++) {
             if (enacted[i]) {
-                Debug.Log("Updating modifiers. Decision enacted:" + i.ToString());
+                //Debug.Log("Updating modifiers. Decision enacted:" + i.ToString());
                 for (int j = 0; j < resources.Count; j++) {
                     income_modifiers[j] += decisions[i].getResource(resources[j].name, decisions[i].income_modifiers);
                 }
@@ -166,7 +168,7 @@ public static class GameState
 
     public static bool canEnactAny() {
         for (int i = 0; i < enacted.Count; i++) {
-            if (!enacted[i] && (decisions[i].prerequisiteDecision == "" || enacted[getCandidateDecisionIndex(decisions[i].prerequisiteDecision)])) {
+            if (!enacted[i] && (decisions[i].prerequisiteDecision == "" || enacted[getDecisionIndex(decisions[i].prerequisiteDecision)])) {
                 return true;
             }
         }
@@ -181,10 +183,10 @@ public static class GameState
                 continue;
             }
 
-            if (decisions[id].prerequisiteDecision == "" && !enacted[id]) {
+            if (decisions[id].prerequisiteDecision == "") {
                 return decisions[id].name;
             }
-            if (enacted[getCandidateDecisionIndex(decisions[id].prerequisiteDecision)] && !enacted[id]) {
+            if (enacted[getDecisionIndex(decisions[id].prerequisiteDecision)]) {
                 return decisions[id].name;
             }
         }
@@ -196,7 +198,8 @@ public static class GameState
             if (buildings[id].prerequisiteDecision == "") {
                 return buildings[id].name;
             }
-            if (enacted[getCandidateDecisionIndex(buildings[id].prerequisiteDecision)]) {
+            Debug.Log("Checking prerequisites: " + buildings[id].prerequisiteDecision);
+            if (enacted[getDecisionIndex(buildings[id].prerequisiteDecision)]) {
                 return buildings[id].name;
             }
         }
@@ -222,6 +225,8 @@ public static class GameState
     }
 
     public static void NewGame() {
+        score = 0;
+        weeks = 91;
         resourcesDescs = new List<Resource>();
         resources = new List<ResourceCount>();
         income = new List<float>();

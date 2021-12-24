@@ -38,6 +38,10 @@ public class Tooltip : MonoBehaviour
             myTooltip += target.getValueString(target.income, " ");
         
             myPicture = Resources.Load<Texture2D>(target.picture);
+
+            if (target.score > 0.00001) {
+                myTooltip += "\n\n<sprite name=\"Star\">" + target.score;
+            }
         } else if(decider != null) {
             Decision target = GameState.getDecision(decider.decision);
             
@@ -53,10 +57,13 @@ public class Tooltip : MonoBehaviour
             myTooltip += target.getValueString(target.income_modifiers, "% ", 100);
         
             myPicture = Resources.Load<Texture2D>(target.picture);
+            if (target.score > 0.00001) {
+                myTooltip += "\n\n<sprite name=\"Star\">" + target.score;
+            };
         }
     }
 
-    private void OnMouseOver() {
+    private void OnMouseEnter() {
         visible = true;
         currentTooltip = myTooltip;
         currentPicture = myPicture;

@@ -1,0 +1,65 @@
+<Building>
+    <name>Temple Of Santa</name>
+
+    <description>A gigantic temple dedicated to the worship of Santa. Gullible elves bring their handmade gifts here as tribute, but little do they know that these gifts will end up under the christmas trees of children.</description>
+
+    <score>0</score>
+    <picture>TempleOfSanta</picture>
+
+    <prerequisiteDecision>Cult Of Santa</prerequisiteDecision>
+
+    <income>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>30</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>1000</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>1000</value>
+        </ResourceCount>
+    </costs>
+
+</Building>

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class BuildsBuilding : MonoBehaviour
 { 
@@ -8,7 +9,7 @@ public class BuildsBuilding : MonoBehaviour
     public bool locked = false;
 
     void notifyFail() {
-
+        Tooltip.currentTooltip = "NOT ENOUGH RESOURCES!!!";
     }
     void notifySuccess() {
         Debug.Log("Built building");

@@ -3,7 +3,7 @@
 
     <description>Delivering all gifts in one night? Are you nuts? Without Santa's magic, we now need to stash gifts in covert logistic centers all over the world before Christmas.</description>
 
-    <score>100</score>
+    <score>500</score>
     <picture>GiftStash</picture>
 
     <income>
@@ -46,7 +46,7 @@
         
         <ResourceCount>
             <name>Gifts</name>
-            <value>25</value>
+            <value>100</value>
         </ResourceCount>
         
         <ResourceCount>

@@ -1,0 +1,61 @@
+<Decision>
+    <name>Burn All Contraceptives</name>
+
+    <description>We need elves, and we need them to fast. If we create an artificial deficit of contraceptives in the colonies, love will make the way.</description>
+    <picture>BurnAllContraceptives</picture>
+
+    <income_modifiers>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0.2</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>0</value>
+        </ResourceCount>
+    </income_modifiers>
+
+    <costs>
+        <ResourceCount>
+            <name>Elves</name>
+            <value>0</value>
+        </ResourceCount>
+
+        <ResourceCount>
+            <name>Humans</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Gifts</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Metals</name>
+            <value>0</value>
+        </ResourceCount>
+        
+        <ResourceCount>
+            <name>Materials</name>
+            <value>10</value>
+        </ResourceCount>
+    </costs>
+
+</Decision>

@@ -8,7 +8,7 @@ public class EnactsDecision : MonoBehaviour
     public bool locked = false;
 
     void notifyFail() {
-
+        Tooltip.currentTooltip = "NOT ENOUGH RESOURCES!!!";
     }
     void notifySuccess() {
         Debug.Log("Enacted decision");
