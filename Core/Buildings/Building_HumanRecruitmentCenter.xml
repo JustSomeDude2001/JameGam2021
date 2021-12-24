@@ -1,10 +1,12 @@
-<Decision>
-    <name>Lower Safety Standarts</name>
+<Building>
+    <name>HRC</name>
 
-    <description>Our lawyers found a loophole that allows us to define acids as "undefined liquids", circumventing health and safety laws.</description>
-    <picture>LowerSafetyStandarts</picture>
+    <description>HRC (Human Recruitment Center) - recruits and trains operatives in human society. After all, elves don't blend in too well, as the average height of humans is increasing.</description>
 
-    <income_modifiers>
+    <score>0</score>
+    <picture>HRC</picture>
+
+    <income>
         <ResourceCount>
             <name>Elves</name>
             <value>0</value>
@@ -12,7 +14,7 @@
 
         <ResourceCount>
             <name>Humans</name>
-            <value>0</value>
+            <value>1</value>
         </ResourceCount>
         
         <ResourceCount>
@@ -22,24 +24,24 @@
         
         <ResourceCount>
             <name>Metals</name>
-            <value>0.1</value>
+            <value>0</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Materials</name>
-            <value>0.1</value>
+            <value>0</value>
         </ResourceCount>
-    </income_modifiers>
+    </income>
 
     <costs>
         <ResourceCount>
             <name>Elves</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
 
         <ResourceCount>
             <name>Humans</name>
-            <value>5</value>
+            <value>0</value>
         </ResourceCount>
         
         <ResourceCount>
@@ -49,13 +51,13 @@
         
         <ResourceCount>
             <name>Metals</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Materials</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
     </costs>
 
-</Decision>
+</Building>

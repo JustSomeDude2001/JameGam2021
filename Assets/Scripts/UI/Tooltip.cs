@@ -9,6 +9,9 @@ public class Tooltip : MonoBehaviour
     public string myTooltip;
 
     public static string currentTooltip;
+    public static Texture2D currentPicture;
+
+    public Texture2D myPicture;
 
     BuildsBuilding builder;
     EnactsDecision decider;
@@ -21,20 +24,43 @@ public class Tooltip : MonoBehaviour
         currentTooltip = "";
 
         if (builder != null) {
-            myTooltip += builder.buildingType;
-            myTooltip += '\n';
+            Building target = GameState.getBuilding(builder.buildingType);
 
-            myTooltip += GameState.getBuilding(builder.buildingType).description;
+            myTooltip += target.name;
+            myTooltip += "\n\n";
+
+            myTooltip += target.description;
+
+            myTooltip += "\n\nCOSTS:\n";
+            myTooltip += target.getValueString(target.costs, " ");
+
+            myTooltip += "\nPRODUCES\n";
+            myTooltip += target.getValueString(target.income, " ");
+        
+            myPicture = Resources.Load<Texture2D>(target.picture);
         } else if(decider != null) {
-            myTooltip += decider.decision;
-            myTooltip += '\n';
+            Decision target = GameState.getDecision(decider.decision);
+            
+            myTooltip += target.name;
+            myTooltip += "\n\n";
 
-            myTooltip += GameState.getDecision(decider.decision).description;
+            myTooltip += target.description;
+
+            myTooltip += "\n\nCOSTS:\n";
+            myTooltip += target.getValueString(target.costs, " ");
+
+            myTooltip += "\nINCREASES OUTPUTS BY:\n";
+            myTooltip += target.getValueString(target.income_modifiers, "% ", 100);
+        
+            myPicture = Resources.Load<Texture2D>(target.picture);
         }
     }
 
     private void OnMouseOver() {
         visible = true;
+        currentTooltip = myTooltip;
+        currentPicture = myPicture;
+        DisplaysPreview.UpdatePreview();
     }
 
     private void OnMouseExit() {

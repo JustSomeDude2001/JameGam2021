@@ -1,22 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class DisplaysIncome : MonoBehaviour
 {
-    Text selfText;
-
-    public string resource;
+    TextMeshProUGUI selfText;
 
     // Start is called before the first frame update
     void Start()
     {
-        selfText = GetComponent<Text>();
+        selfText = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
     {
-        selfText.text = "+" + GameState.getIncome(resource).ToString();
+        selfText.text = "";
+        for (int i = 0; i < GameState.resources.Count; i++) {
+            selfText.text += "+" + ((int)GameState.income[i]).ToString() + '\n'; 
+        }   
     }
 }

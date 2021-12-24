@@ -1,12 +1,15 @@
 <Building>
-    <name>House</name>
+    <name>Gift Factory</name>
+
+    <description>Literally sweatshops where elves work day and night to make toys for the incoming Christmas. Products vary from toy horses to counterfeit game consoles.</description>
 
     <score>0</score>
+    <picture>GiftFactory</picture>
 
     <income>
         <ResourceCount>
             <name>Elves</name>
-            <value>1</value>
+            <value>0</value>
         </ResourceCount>
 
         <ResourceCount>
@@ -16,7 +19,7 @@
         
         <ResourceCount>
             <name>Gifts</name>
-            <value>0</value>
+            <value>2</value>
         </ResourceCount>
         
         <ResourceCount>
@@ -33,7 +36,7 @@
     <costs>
         <ResourceCount>
             <name>Elves</name>
-            <value>10</value>
+            <value>5</value>
         </ResourceCount>
 
         <ResourceCount>
@@ -48,12 +51,12 @@
         
         <ResourceCount>
             <name>Metals</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Materials</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
     </costs>
 

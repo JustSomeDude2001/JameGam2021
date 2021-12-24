@@ -1,10 +1,12 @@
-<Decision>
-    <name>Lower Safety Standarts</name>
+<Building>
+    <name>Extraction Post</name>
 
-    <description>Our lawyers found a loophole that allows us to define acids as "undefined liquids", circumventing health and safety laws.</description>
-    <picture>LowerSafetyStandarts</picture>
+    <description>Since Santa's magic is no longer available, we actually need to follow the law of conservation of mass. Hence raw resources for children toys need to be discretely extracted by teams in 3rd world contries.</description>
 
-    <income_modifiers>
+    <score>0</score>
+    <picture>ExtractionPost</picture>
+
+    <income>
         <ResourceCount>
             <name>Elves</name>
             <value>0</value>
@@ -22,24 +24,24 @@
         
         <ResourceCount>
             <name>Metals</name>
-            <value>0.1</value>
+            <value>0</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Materials</name>
-            <value>0.1</value>
+            <value>2</value>
         </ResourceCount>
-    </income_modifiers>
+    </income>
 
     <costs>
         <ResourceCount>
             <name>Elves</name>
-            <value>0</value>
+            <value>5</value>
         </ResourceCount>
 
         <ResourceCount>
             <name>Humans</name>
-            <value>5</value>
+            <value>1</value>
         </ResourceCount>
         
         <ResourceCount>
@@ -58,4 +60,4 @@
         </ResourceCount>
     </costs>
 
-</Decision>
+</Building>

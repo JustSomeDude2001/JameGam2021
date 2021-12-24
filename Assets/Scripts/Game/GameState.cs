@@ -136,6 +136,7 @@ public static class GameState
             curval.value -= target.getResource(curval.name, target.costs);
         }
         enacted[index] = true;
+        Debug.Log("Decision " + index.ToString() + " enacted");
         RecalculateDeltas();
     }
 
@@ -147,8 +148,9 @@ public static class GameState
 
         for (int i = 0; i < decisions.Count; i++) {
             if (enacted[i]) {
+                Debug.Log("Updating modifiers. Decision enacted:" + i.ToString());
                 for (int j = 0; j < resources.Count; j++) {
-                    income_modifiers[i] += decisions[i].getResource(resources[i].name, decisions[i].income_modifiers);
+                    income_modifiers[j] += decisions[i].getResource(resources[j].name, decisions[i].income_modifiers);
                 }
             }
         }
@@ -164,7 +166,7 @@ public static class GameState
 
     public static bool canEnactAny() {
         for (int i = 0; i < enacted.Count; i++) {
-            if (!enacted[i]) {
+            if (!enacted[i] && (decisions[i].prerequisiteDecision == "" || enacted[getCandidateDecisionIndex(decisions[i].prerequisiteDecision)])) {
                 return true;
             }
         }
@@ -174,10 +176,12 @@ public static class GameState
     public static string getRandomPossibleDecision() {
         while (true) {
             int id = Random.Range(0, decisions.Count);
-            if (id >= decisions.Count) {
+
+            if (enacted[id]) {
                 continue;
             }
-            if (decisions[id].prerequisiteDecision == "") {
+
+            if (decisions[id].prerequisiteDecision == "" && !enacted[id]) {
                 return decisions[id].name;
             }
             if (enacted[getCandidateDecisionIndex(decisions[id].prerequisiteDecision)] && !enacted[id]) {
@@ -189,9 +193,6 @@ public static class GameState
     public static string getRandomPossibleBuilding() {
         while (true) {
             int id = Random.Range(0, buildings.Count);
-            if (id >= buildings.Count) {
-                continue;
-            }
             if (buildings[id].prerequisiteDecision == "") {
                 return buildings[id].name;
             }
@@ -213,6 +214,7 @@ public static class GameState
     public static void NextTurn() {
         Debug.Log("Next Turn");
         RecalculateDeltas();
+        Paper.hadDecisionOnBoard = false;
         weeks--;
         for (int i = 0; i < resources.Count; i++) {
             resources[i].value += income[i];
@@ -247,6 +249,8 @@ public static class GameState
             decisions.Add(newDecision);
             enacted.Add(false);
         }
+
+        Debug.Log("Sizes: " + decisions.Count.ToString() + " " + enacted.Count.ToString());
 
         Debug.Log(buildings.Count.ToString() + " buildings loaded");
 

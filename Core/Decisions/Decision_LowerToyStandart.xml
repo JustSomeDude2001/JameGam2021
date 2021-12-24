@@ -1,8 +1,8 @@
 <Decision>
-    <name>Lower Safety Standarts</name>
+    <name>Lower Toy Standart</name>
 
-    <description>Our lawyers found a loophole that allows us to define acids as "undefined liquids", circumventing health and safety laws.</description>
-    <picture>LowerSafetyStandarts</picture>
+    <description>Every designated kid needs to get a toy. How good is the toy - not our priority. Let's designate an engineering team to cut corners off of those iPhones.</description>
+    <picture>LowerToyStandart</picture>
 
     <income_modifiers>
         <ResourceCount>
@@ -17,17 +17,17 @@
         
         <ResourceCount>
             <name>Gifts</name>
-            <value>0</value>
+            <value>0.25</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Metals</name>
-            <value>0.1</value>
+            <value>0</value>
         </ResourceCount>
         
         <ResourceCount>
             <name>Materials</name>
-            <value>0.1</value>
+            <value>0</value>
         </ResourceCount>
     </income_modifiers>
 
@@ -39,7 +39,7 @@
 
         <ResourceCount>
             <name>Humans</name>
-            <value>5</value>
+            <value>10</value>
         </ResourceCount>
         
         <ResourceCount>
